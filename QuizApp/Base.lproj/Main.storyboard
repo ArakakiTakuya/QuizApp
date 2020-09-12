@@ -15,11 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Bpx-78-vjG">
-                                <rect key="frame" x="25" y="491" width="364" height="361"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bpx-78-vjG">
+                                <rect key="frame" x="162" y="267" width="172" height="376"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS9-Js-Gkk">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-ED-akG" userLabel="Option1">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="70"/>
+                                        <rect key="frame" x="0.0" y="66" width="172" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="cLo-bM-by3"/>
                                         </constraints>
@@ -29,7 +35,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwr-Nt-kiG" userLabel="Option2">
-                                        <rect key="frame" x="0.0" y="97" width="364" height="70"/>
+                                        <rect key="frame" x="0.0" y="146" width="172" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="RZa-zX-Pnf"/>
                                         </constraints>
@@ -39,7 +45,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTt-MU-03D" userLabel="Option3">
-                                        <rect key="frame" x="0.0" y="194" width="364" height="70"/>
+                                        <rect key="frame" x="0.0" y="226" width="172" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="gGS-6E-Zat"/>
                                         </constraints>
@@ -49,7 +55,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Am-6p-b3K" userLabel="Option4">
-                                        <rect key="frame" x="0.0" y="291" width="364" height="70"/>
+                                        <rect key="frame" x="0.0" y="306" width="172" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="mxc-dn-8E4"/>
                                         </constraints>
@@ -62,11 +68,6 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bpx-78-vjG" secondAttribute="trailing" constant="25" id="Edy-HX-1Jq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bpx-78-vjG" secondAttribute="bottom" constant="10" id="NqI-rW-RXn"/>
-                            <constraint firstItem="Bpx-78-vjG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="sUf-Um-xFd"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -78,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>
