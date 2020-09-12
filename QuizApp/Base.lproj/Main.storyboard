@@ -15,17 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bpx-78-vjG">
-                                <rect key="frame" x="162" y="267" width="172" height="376"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bpx-78-vjG">
+                                <rect key="frame" x="25" y="54" width="364" height="798"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zLm-5Z-KV5">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="168"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QF5-Jt-37m">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="2"/>
+                                            </progressView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="questionNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-kz-B9q">
+                                                <rect key="frame" x="0.0" y="12" width="364" height="156"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS9-Js-Gkk">
-                                        <rect key="frame" x="0.0" y="0.0" width="172" height="56"/>
+                                        <rect key="frame" x="0.0" y="178" width="364" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="glu-LH-3zX"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-ED-akG" userLabel="Option1">
-                                        <rect key="frame" x="0.0" y="66" width="172" height="70"/>
+                                        <rect key="frame" x="0.0" y="488" width="364" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="cLo-bM-by3"/>
                                         </constraints>
@@ -35,7 +52,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwr-Nt-kiG" userLabel="Option2">
-                                        <rect key="frame" x="0.0" y="146" width="172" height="70"/>
+                                        <rect key="frame" x="0.0" y="568" width="364" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="RZa-zX-Pnf"/>
                                         </constraints>
@@ -45,7 +62,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTt-MU-03D" userLabel="Option3">
-                                        <rect key="frame" x="0.0" y="226" width="172" height="70"/>
+                                        <rect key="frame" x="0.0" y="648" width="364" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="gGS-6E-Zat"/>
                                         </constraints>
@@ -55,7 +72,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Am-6p-b3K" userLabel="Option4">
-                                        <rect key="frame" x="0.0" y="306" width="172" height="70"/>
+                                        <rect key="frame" x="0.0" y="728" width="364" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="mxc-dn-8E4"/>
                                         </constraints>
@@ -68,6 +85,12 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bpx-78-vjG" secondAttribute="bottom" constant="10" id="Quw-aJ-ys0"/>
+                            <constraint firstItem="Bpx-78-vjG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="WHG-Qr-al1"/>
+                            <constraint firstItem="Bpx-78-vjG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="XLx-Vx-jql"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bpx-78-vjG" secondAttribute="trailing" constant="25" id="pwU-WF-QRd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
