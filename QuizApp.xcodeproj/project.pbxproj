@@ -13,6 +13,7 @@
 		BAEBDEDD250B5F8D00E8BD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEDB250B5F8D00E8BD6A /* Main.storyboard */; };
 		BAEBDEDF250B5F9100E8BD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */; };
 		BAEBDEE2250B5F9100E8BD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEE0250B5F9100E8BD6A /* LaunchScreen.storyboard */; };
+		BAEBDEF9250DF80100E8BD6A /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAEBDEE1250B5F9100E8BD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAEBDEE3250B5F9100E8BD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		BAEBDEC9250B5F8D00E8BD6A = {
 			isa = PBXGroup;
 			children = (
+				BAEBDEFA250E4BA300E8BD6A /* Extensions */,
 				BAEBDED4250B5F8D00E8BD6A /* QuizApp */,
 				BAEBDED3250B5F8D00E8BD6A /* Products */,
 			);
@@ -59,8 +62,8 @@
 				BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */,
 				BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */,
 				BAEBDEF3250DC58500E8BD6A /* Model */,
-				BAEBDEF1250DC54D00E8BD6A /* Controller */,
 				BAEBDEF2250DC56C00E8BD6A /* View */,
+				BAEBDEF1250DC54D00E8BD6A /* Controller */,
 				BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */,
 				BAEBDEE0250B5F9100E8BD6A /* LaunchScreen.storyboard */,
 				BAEBDEE3250B5F9100E8BD6A /* Info.plist */,
@@ -89,6 +92,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BAEBDEFA250E4BA300E8BD6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEBDEDA250B5F8D00E8BD6A /* ViewController.swift in Sources */,
+				BAEBDEF9250DF80100E8BD6A /* UIImage+resize.swift in Sources */,
 				BAEBDED6250B5F8D00E8BD6A /* AppDelegate.swift in Sources */,
 				BAEBDED8250B5F8D00E8BD6A /* SceneDelegate.swift in Sources */,
 			);
