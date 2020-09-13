@@ -27,19 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        option1Button.layer.cornerRadius = 10.0
-        option1Button.layer.borderColor = UIColor.lightGray.cgColor
-        option1Button.layer.borderWidth = 2.0
-        option2Button.layer.cornerRadius = 10.0
-        option2Button.layer.borderColor = UIColor.lightGray.cgColor
-        option2Button.layer.borderWidth = 2.0
-        option3Button.layer.cornerRadius = 10.0
-        option3Button.layer.borderColor = UIColor.lightGray.cgColor
-        option3Button.layer.borderWidth = 2.0
-        option4Button.layer.cornerRadius = 10.0
-        option4Button.layer.borderColor = UIColor.lightGray.cgColor
-        option4Button.layer.borderWidth = 2.0
-        
+        applyDesignForButton()
         updateUI()
     }
         
@@ -66,7 +54,20 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    func applyDesignForButton(){
+        option1Button.layer.cornerRadius = 10.0
+        option1Button.layer.borderColor = UIColor.lightGray.cgColor
+        option1Button.layer.borderWidth = 2.0
+        option2Button.layer.cornerRadius = 10.0
+        option2Button.layer.borderColor = UIColor.lightGray.cgColor
+        option2Button.layer.borderWidth = 2.0
+        option3Button.layer.cornerRadius = 10.0
+        option3Button.layer.borderColor = UIColor.lightGray.cgColor
+        option3Button.layer.borderWidth = 2.0
+        option4Button.layer.cornerRadius = 10.0
+        option4Button.layer.borderColor = UIColor.lightGray.cgColor
+        option4Button.layer.borderWidth = 2.0
+    }
     
 
     
