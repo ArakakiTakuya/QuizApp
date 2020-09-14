@@ -39,13 +39,11 @@ class ViewController: UIViewController {
         let userAnswer = sender.currentTitle!
         
         if userAnswer == quizBrain.newOrderWords?[quizBrain.questionNumber].ja {
-            let image = UIImage(named: "correct.png")!
-            let newImage = image.resize(withSize: CGSize(width: questionLabel.frame.width, height: questionLabel.frame.height), contentMode: .contentFill)
-            questionLabel.backgroundColor = UIColor(patternImage: newImage!)
+            let resizedImage = setImage(imgFile: "correct.png")
+            questionLabel.backgroundColor = UIColor(patternImage: resizedImage)
         }else{
-            let image = UIImage(named: "incorrect.png")!
-            let newImage = image.resize(withSize: CGSize(width: questionLabel.frame.width, height: questionLabel.frame.height), contentMode: .contentFill)
-            questionLabel.backgroundColor = UIColor(patternImage: newImage!)
+            let resizedImage = setImage(imgFile:"incorrect.png")
+            questionLabel.backgroundColor = UIColor(patternImage: resizedImage)
         }
         
         quizBrain.nextQuestion()
@@ -53,6 +51,10 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             self.updateUI()
         }
+    }
+    
+    func setImage(imgFile: String)->UIImage{
+        return UIImage(named: (imgFile))!.resize(withSize: CGSize(width: questionLabel.frame.width, height: questionLabel.frame.height), contentMode: .contentFill)!
     }
     
     func applyDesignForButton(){
