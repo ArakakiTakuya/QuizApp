@@ -16,34 +16,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var option3Button: UIButton!
     @IBOutlet weak var option4Button: UIButton!
     
-    var questionNumber = 0
-    
-    let words = [
-        ["en":"insert","ja":"を挿入する"],
-        ["en":"add","ja":"を追加する"],
-        ["en":"delete","ja":"を消去する"],
-        ["en":"implement","ja":"を実装する"]
-    ]
-    
+    var quizBrain = QuizBrain()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         applyDesignForButton()
+        quizBrain.shuffleWords()
         updateUI()
     }
         
     func updateUI(){
-        questionNumberLabel.text = "\(questionNumber+1)/10"
-        questionLabel.text = words[0]["en"]
-        option1Button.setTitle(words[0]["ja"], for: .normal)
-        option2Button.setTitle(words[1]["ja"], for: .normal)
-        option3Button.setTitle(words[2]["ja"], for: .normal)
-        option4Button.setTitle(words[3]["ja"], for: .normal)
+        questionLabel.backgroundColor = UIColor.clear
+        questionNumberLabel.text = "\(quizBrain.questionNumber+1)/5"
+        questionLabel.text = quizBrain.getQuestionText()
+        option1Button.setTitle(quizBrain.newQuestion?[0].ja, for: .normal)
+        option2Button.setTitle(quizBrain.newQuestion?[1].ja, for: .normal)
+        option3Button.setTitle(quizBrain.newQuestion?[2].ja, for: .normal)
+        option4Button.setTitle(quizBrain.newQuestion?[3].ja, for: .normal)
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle!
         
-        if userAnswer == words[questionNumber]["ja"] {
+        if userAnswer == quizBrain.newOrderWords?[quizBrain.questionNumber].ja {
             let image = UIImage(named: "correct.png")!
             let newImage = image.resize(withSize: CGSize(width: questionLabel.frame.width, height: questionLabel.frame.height), contentMode: .contentFill)
             questionLabel.backgroundColor = UIColor(patternImage: newImage!)
@@ -51,6 +46,12 @@ class ViewController: UIViewController {
             let image = UIImage(named: "incorrect.png")!
             let newImage = image.resize(withSize: CGSize(width: questionLabel.frame.width, height: questionLabel.frame.height), contentMode: .contentFill)
             questionLabel.backgroundColor = UIColor(patternImage: newImage!)
+        }
+        
+        quizBrain.nextQuestion()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.updateUI()
         }
     }
     
