@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var timeProgressBar: UIProgressView!
     @IBOutlet weak var questionNumberLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var option1Button: UIButton!
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var option4Button: UIButton!
     
     var quizBrain = QuizBrain()
+    
+    var timer: Timer?
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,7 @@ class ViewController: UIViewController {
     }
         
     func updateUI(){
+        timeProgressBar.progress = 1.0
         questionLabel.backgroundColor = UIColor.clear
         questionNumberLabel.text = "\(quizBrain.questionNumber+1)/5"
         questionLabel.text = quizBrain.getQuestionText()
@@ -33,6 +37,7 @@ class ViewController: UIViewController {
         option2Button.setTitle(quizBrain.newQuestion?[1].ja, for: .normal)
         option3Button.setTitle(quizBrain.newQuestion?[2].ja, for: .normal)
         option4Button.setTitle(quizBrain.newQuestion?[3].ja, for: .normal)
+        startTimer()
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -49,12 +54,27 @@ class ViewController: UIViewController {
         quizBrain.nextQuestion()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.timer?.invalidate()
             self.updateUI()
         }
     }
     
     func setImage(imgFile: String)->UIImage{
         return UIImage(named: (imgFile))!.resize(withSize: CGSize(width: questionLabel.frame.width, height: questionLabel.frame.height), contentMode: .contentFill)!
+    }
+    
+    func startTimer(){
+        var secondsRemaining = 5.0
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (Timer) in
+            if secondsRemaining > 0 {
+                self.timeProgressBar.progress = Float(secondsRemaining)/Float(5.0)
+                secondsRemaining -= 0.01
+            } else {
+                self.timer?.invalidate()
+                self.quizBrain.nextQuestion()
+                self.updateUI()
+            }
+        }
     }
     
     func applyDesignForButton(){

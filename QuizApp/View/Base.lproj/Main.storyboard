@@ -109,6 +109,7 @@
                         <outlet property="option4Button" destination="4Am-6p-b3K" id="eoo-Jf-ggQ"/>
                         <outlet property="questionLabel" destination="jS9-Js-Gkk" id="X6u-af-iUc"/>
                         <outlet property="questionNumberLabel" destination="AoD-kz-B9q" id="EFK-xP-2J8"/>
+                        <outlet property="timeProgressBar" destination="QF5-Jt-37m" id="eis-yz-CqH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
