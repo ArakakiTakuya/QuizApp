@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var timeProgressBar: UIProgressView!
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
     var quizBrain = QuizBrain()
     
     var timer: Timer?
+    var player: AVAudioPlayer!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +48,11 @@ class ViewController: UIViewController {
         if userAnswer == quizBrain.newOrderWords?[quizBrain.questionNumber].ja {
             let resizedImage = setImage(imgFile: "correct.png")
             questionLabel.backgroundColor = UIColor(patternImage: resizedImage)
+            playSound(soundName : "correct")
         }else{
             let resizedImage = setImage(imgFile:"incorrect.png")
             questionLabel.backgroundColor = UIColor(patternImage: resizedImage)
+            playSound(soundName : "incorrect")
         }
         
         quizBrain.nextQuestion()
@@ -75,6 +79,12 @@ class ViewController: UIViewController {
                 self.updateUI()
             }
         }
+    }
+    
+    func playSound(soundName:String) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
     
     func applyDesignForButton(){
