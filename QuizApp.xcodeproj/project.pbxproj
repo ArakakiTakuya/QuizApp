@@ -16,6 +16,8 @@
 		BAEBDEF9250DF80100E8BD6A /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */; };
 		BAEBDEFC250E51C800E8BD6A /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDEFB250E51C800E8BD6A /* QuizBrain.swift */; };
 		BAEBDEFE250E523700E8BD6A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDEFD250E523700E8BD6A /* Word.swift */; };
+		BAEBDF0E2512616000E8BD6A /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDF0D2512616000E8BD6A /* incorrect.wav */; };
+		BAEBDF102512616800E8BD6A /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDF0F2512616800E8BD6A /* correct.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
 		BAEBDEFB250E51C800E8BD6A /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		BAEBDEFD250E523700E8BD6A /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		BAEBDF0D2512616000E8BD6A /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incorrect.wav; path = "../../../../../Library/Group Containers/group.com.apple.notes/Media/1639FC2E-1A5D-4D16-98C9-C14691410DD4/incorrect.wav"; sourceTree = "<group>"; };
+		BAEBDF0F2512616800E8BD6A /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = "../../../../../Library/Group Containers/group.com.apple.notes/Media/3D3BECCD-8670-4865-A2BD-81C4FBD0102E/correct.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				BAEBDEF3250DC58500E8BD6A /* Model */,
 				BAEBDEF2250DC56C00E8BD6A /* View */,
 				BAEBDEF1250DC54D00E8BD6A /* Controller */,
+				BAEBDF0825125ED100E8BD6A /* Sounds */,
 				BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */,
 				BAEBDEE0250B5F9100E8BD6A /* LaunchScreen.storyboard */,
 				BAEBDEE3250B5F9100E8BD6A /* Info.plist */,
@@ -106,6 +111,15 @@
 				BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BAEBDF0825125ED100E8BD6A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BAEBDF0F2512616800E8BD6A /* correct.wav */,
+				BAEBDF0D2512616000E8BD6A /* incorrect.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +182,8 @@
 			files = (
 				BAEBDEE2250B5F9100E8BD6A /* LaunchScreen.storyboard in Resources */,
 				BAEBDEDF250B5F9100E8BD6A /* Assets.xcassets in Resources */,
+				BAEBDF0E2512616000E8BD6A /* incorrect.wav in Resources */,
+				BAEBDF102512616800E8BD6A /* correct.wav in Resources */,
 				BAEBDEDD250B5F8D00E8BD6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
