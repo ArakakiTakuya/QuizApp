@@ -18,6 +18,7 @@
 		BAEBDEFE250E523700E8BD6A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDEFD250E523700E8BD6A /* Word.swift */; };
 		BAEBDF0E2512616000E8BD6A /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDF0D2512616000E8BD6A /* incorrect.wav */; };
 		BAEBDF102512616800E8BD6A /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDF0F2512616800E8BD6A /* correct.wav */; };
+		BAEBDF12251757F700E8BD6A /* UIButton+makeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDF11251757F700E8BD6A /* UIButton+makeStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BAEBDEFD250E523700E8BD6A /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		BAEBDF0D2512616000E8BD6A /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incorrect.wav; path = "../../../../../Library/Group Containers/group.com.apple.notes/Media/1639FC2E-1A5D-4D16-98C9-C14691410DD4/incorrect.wav"; sourceTree = "<group>"; };
 		BAEBDF0F2512616800E8BD6A /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = "../../../../../Library/Group Containers/group.com.apple.notes/Media/3D3BECCD-8670-4865-A2BD-81C4FBD0102E/correct.wav"; sourceTree = "<group>"; };
+		BAEBDF11251757F700E8BD6A /* UIButton+makeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+makeStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */,
+				BAEBDF11251757F700E8BD6A /* UIButton+makeStyle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				BAEBDEDA250B5F8D00E8BD6A /* ViewController.swift in Sources */,
 				BAEBDEF9250DF80100E8BD6A /* UIImage+resize.swift in Sources */,
 				BAEBDED6250B5F8D00E8BD6A /* AppDelegate.swift in Sources */,
+				BAEBDF12251757F700E8BD6A /* UIButton+makeStyle.swift in Sources */,
 				BAEBDED8250B5F8D00E8BD6A /* SceneDelegate.swift in Sources */,
 				BAEBDEFE250E523700E8BD6A /* Word.swift in Sources */,
 			);
