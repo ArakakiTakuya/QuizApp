@@ -62,7 +62,6 @@
 			children = (
 				BAEBDEDB250B5F8D00E8BD6A /* Main.storyboard */,
 				BAEBDED9250B5F8D00E8BD6A /* ViewController.swift */,
-				BAEBDEFB250E51C800E8BD6A /* QuizBrain.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -91,7 +90,6 @@
 				BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */,
 				BAEBDEF3250DC58500E8BD6A /* Models */,
 				BA591EB7254EE9BE001D02E2 /* ViewControllers */,
-				BAEBDEF1250DC54D00E8BD6A /* Controller */,
 				BAEBDF0825125ED100E8BD6A /* Sounds */,
 				BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */,
 				BAEBDEE0250B5F9100E8BD6A /* LaunchScreen.storyboard */,
@@ -100,17 +98,11 @@
 			path = QuizApp;
 			sourceTree = "<group>";
 		};
-		BAEBDEF1250DC54D00E8BD6A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		BAEBDEF3250DC58500E8BD6A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BAEBDEFD250E523700E8BD6A /* Word.swift */,
+				BAEBDEFB250E51C800E8BD6A /* QuizBrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
