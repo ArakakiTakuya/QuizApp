@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAAF11DA2518E05E00167B38 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAAF11D92518E05E00167B38 /* correct.wav */; };
+		BAAF11DE2518E16900167B38 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAAF11DD2518E16900167B38 /* incorrect.wav */; };
 		BAEBDED6250B5F8D00E8BD6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */; };
 		BAEBDED8250B5F8D00E8BD6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */; };
 		BAEBDEDA250B5F8D00E8BD6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED9250B5F8D00E8BD6A /* ViewController.swift */; };
@@ -16,12 +18,12 @@
 		BAEBDEF9250DF80100E8BD6A /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */; };
 		BAEBDEFC250E51C800E8BD6A /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDEFB250E51C800E8BD6A /* QuizBrain.swift */; };
 		BAEBDEFE250E523700E8BD6A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDEFD250E523700E8BD6A /* Word.swift */; };
-		BAEBDF0E2512616000E8BD6A /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDF0D2512616000E8BD6A /* incorrect.wav */; };
-		BAEBDF102512616800E8BD6A /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDF0F2512616800E8BD6A /* correct.wav */; };
 		BAEBDF12251757F700E8BD6A /* UIButton+makeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDF11251757F700E8BD6A /* UIButton+makeStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BAAF11D92518E05E00167B38 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = "../../../../../Downloads/Quiz-Buzzer02-mp3 2/correct.wav"; sourceTree = "<group>"; };
+		BAAF11DD2518E16900167B38 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incorrect.wav; path = "../../../../../Downloads/Quiz-Wrong_Buzzer02-mp3/incorrect.wav"; sourceTree = "<group>"; };
 		BAEBDED2250B5F8D00E8BD6A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,8 +35,6 @@
 		BAEBDEF8250DF80100E8BD6A /* UIImage+resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
 		BAEBDEFB250E51C800E8BD6A /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		BAEBDEFD250E523700E8BD6A /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		BAEBDF0D2512616000E8BD6A /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incorrect.wav; path = "../../../../../Library/Group Containers/group.com.apple.notes/Media/1639FC2E-1A5D-4D16-98C9-C14691410DD4/incorrect.wav"; sourceTree = "<group>"; };
-		BAEBDF0F2512616800E8BD6A /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = "../../../../../Library/Group Containers/group.com.apple.notes/Media/3D3BECCD-8670-4865-A2BD-81C4FBD0102E/correct.wav"; sourceTree = "<group>"; };
 		BAEBDF11251757F700E8BD6A /* UIButton+makeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+makeStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA591EB7254EE9BE001D02E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA591EB8254EEA63001D02E2 /* Study */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BA591EB8254EEA63001D02E2 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				BAEBDEDB250B5F8D00E8BD6A /* Main.storyboard */,
+				BAEBDED9250B5F8D00E8BD6A /* ViewController.swift */,
+				BAEBDEFB250E51C800E8BD6A /* QuizBrain.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
 		BAEBDEC9250B5F8D00E8BD6A = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +89,8 @@
 			children = (
 				BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */,
 				BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */,
-				BAEBDEF3250DC58500E8BD6A /* Model */,
-				BAEBDEF2250DC56C00E8BD6A /* View */,
+				BAEBDEF3250DC58500E8BD6A /* Models */,
+				BA591EB7254EE9BE001D02E2 /* ViewControllers */,
 				BAEBDEF1250DC54D00E8BD6A /* Controller */,
 				BAEBDF0825125ED100E8BD6A /* Sounds */,
 				BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */,
@@ -85,26 +103,16 @@
 		BAEBDEF1250DC54D00E8BD6A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BAEBDED9250B5F8D00E8BD6A /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		BAEBDEF2250DC56C00E8BD6A /* View */ = {
+		BAEBDEF3250DC58500E8BD6A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BAEBDEDB250B5F8D00E8BD6A /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		BAEBDEF3250DC58500E8BD6A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BAEBDEFB250E51C800E8BD6A /* QuizBrain.swift */,
 				BAEBDEFD250E523700E8BD6A /* Word.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BAEBDEFA250E4BA300E8BD6A /* Extensions */ = {
@@ -119,8 +127,8 @@
 		BAEBDF0825125ED100E8BD6A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				BAEBDF0F2512616800E8BD6A /* correct.wav */,
-				BAEBDF0D2512616000E8BD6A /* incorrect.wav */,
+				BAAF11D92518E05E00167B38 /* correct.wav */,
+				BAAF11DD2518E16900167B38 /* incorrect.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -184,10 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEBDEE2250B5F9100E8BD6A /* LaunchScreen.storyboard in Resources */,
+				BAAF11DE2518E16900167B38 /* incorrect.wav in Resources */,
 				BAEBDEDF250B5F9100E8BD6A /* Assets.xcassets in Resources */,
-				BAEBDF0E2512616000E8BD6A /* incorrect.wav in Resources */,
-				BAEBDF102512616800E8BD6A /* correct.wav in Resources */,
 				BAEBDEDD250B5F8D00E8BD6A /* Main.storyboard in Resources */,
+				BAAF11DA2518E05E00167B38 /* correct.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
