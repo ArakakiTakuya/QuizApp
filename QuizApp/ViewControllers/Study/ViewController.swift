@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var option3Button: UIButton!
     @IBOutlet weak var option4Button: UIButton!
     
-    var quizBrain = QuizBrain()
+    var studyViewModel = StudyViewModel()
     
     var timer: Timer?
     var player: AVAudioPlayer!
@@ -26,26 +26,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         applyDesignForButton()
-        quizBrain.shuffleWords()
+        studyViewModel.shuffleWords()
         updateUI()
     }
         
     func updateUI(){
         timeProgressBar.progress = 1.0
         questionLabel.backgroundColor = UIColor.clear
-        questionNumberLabel.text = "\(quizBrain.questionNumber+1)/5"
-        questionLabel.text = quizBrain.getQuestionText()
-        option1Button.setTitle(quizBrain.newQuestion?[0].ja, for: .normal)
-        option2Button.setTitle(quizBrain.newQuestion?[1].ja, for: .normal)
-        option3Button.setTitle(quizBrain.newQuestion?[2].ja, for: .normal)
-        option4Button.setTitle(quizBrain.newQuestion?[3].ja, for: .normal)
+        questionNumberLabel.text = "\(studyViewModel.questionNumber+1)/5"
+        questionLabel.text = studyViewModel.getQuestionText()
+        option1Button.setTitle(studyViewModel.newQuestion?[0].ja, for: .normal)
+        option2Button.setTitle(studyViewModel.newQuestion?[1].ja, for: .normal)
+        option3Button.setTitle(studyViewModel.newQuestion?[2].ja, for: .normal)
+        option4Button.setTitle(studyViewModel.newQuestion?[3].ja, for: .normal)
         startTimer()
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle!
         
-        if userAnswer == quizBrain.newOrderWords?[quizBrain.questionNumber].ja {
+        if userAnswer == studyViewModel.newOrderWords?[studyViewModel.questionNumber].ja {
             let resizedImage = setImage(imgFile: "correct.png")
             questionLabel.backgroundColor = UIColor(patternImage: resizedImage)
             playSound(soundName : "correct")
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             playSound(soundName : "incorrect")
         }
         
-        quizBrain.nextQuestion()
+        studyViewModel.nextQuestion()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             self.timer?.invalidate()
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
                 secondsRemaining -= 0.01
             } else {
                 self.timer?.invalidate()
-                self.quizBrain.nextQuestion()
+                self.studyViewModel.nextQuestion()
                 self.updateUI()
             }
         }
