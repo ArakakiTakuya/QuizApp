@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class StudyingViewController: UIViewController {
+class StudyViewController: UIViewController {
     @IBOutlet weak var timeProgressBar: UIProgressView!
     @IBOutlet weak var questionNumberLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!

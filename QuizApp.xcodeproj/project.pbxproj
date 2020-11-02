@@ -12,7 +12,7 @@
 		BAAF11DE2518E16900167B38 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAAF11DD2518E16900167B38 /* incorrect.wav */; };
 		BAEBDED6250B5F8D00E8BD6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */; };
 		BAEBDED8250B5F8D00E8BD6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */; };
-		BAEBDEDA250B5F8D00E8BD6A /* StudyingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED9250B5F8D00E8BD6A /* StudyingViewController.swift */; };
+		BAEBDEDA250B5F8D00E8BD6A /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED9250B5F8D00E8BD6A /* StudyViewController.swift */; };
 		BAEBDEDD250B5F8D00E8BD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEDB250B5F8D00E8BD6A /* Main.storyboard */; };
 		BAEBDEDF250B5F9100E8BD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */; };
 		BAEBDEE2250B5F9100E8BD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEE0250B5F9100E8BD6A /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 		BAEBDED2250B5F8D00E8BD6A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BAEBDED9250B5F8D00E8BD6A /* StudyingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyingViewController.swift; sourceTree = "<group>"; };
+		BAEBDED9250B5F8D00E8BD6A /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 		BAEBDEDC250B5F8D00E8BD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAEBDEE1250B5F9100E8BD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEBDEDB250B5F8D00E8BD6A /* Main.storyboard */,
-				BAEBDED9250B5F8D00E8BD6A /* StudyingViewController.swift */,
+				BAEBDED9250B5F8D00E8BD6A /* StudyViewController.swift */,
 				BA591EC22550561E001D02E2 /* StudyViewModel.swift */,
 			);
 			path = Study;
@@ -199,7 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA591EC32550561E001D02E2 /* StudyViewModel.swift in Sources */,
-				BAEBDEDA250B5F8D00E8BD6A /* StudyingViewController.swift in Sources */,
+				BAEBDEDA250B5F8D00E8BD6A /* StudyViewController.swift in Sources */,
 				BAEBDEF9250DF80100E8BD6A /* UIImage+resize.swift in Sources */,
 				BAEBDED6250B5F8D00E8BD6A /* AppDelegate.swift in Sources */,
 				BAEBDF12251757F700E8BD6A /* UIButton+makeStyle.swift in Sources */,
