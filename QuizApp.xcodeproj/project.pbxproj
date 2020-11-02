@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA591EC025505600001D02E2 /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA591EBF25505600001D02E2 /* StudyViewController.swift */; };
 		BA591EC32550561E001D02E2 /* StudyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA591EC22550561E001D02E2 /* StudyViewModel.swift */; };
 		BAAF11DA2518E05E00167B38 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAAF11D92518E05E00167B38 /* correct.wav */; };
 		BAAF11DE2518E16900167B38 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAAF11DD2518E16900167B38 /* incorrect.wav */; };
 		BAEBDED6250B5F8D00E8BD6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */; };
 		BAEBDED8250B5F8D00E8BD6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */; };
-		BAEBDEDA250B5F8D00E8BD6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED9250B5F8D00E8BD6A /* ViewController.swift */; };
+		BAEBDEDA250B5F8D00E8BD6A /* StudyingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED9250B5F8D00E8BD6A /* StudyingViewController.swift */; };
 		BAEBDEDD250B5F8D00E8BD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEDB250B5F8D00E8BD6A /* Main.storyboard */; };
 		BAEBDEDF250B5F9100E8BD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */; };
 		BAEBDEE2250B5F9100E8BD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEBDEE0250B5F9100E8BD6A /* LaunchScreen.storyboard */; };
@@ -23,14 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA591EBF25505600001D02E2 /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 		BA591EC22550561E001D02E2 /* StudyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewModel.swift; sourceTree = "<group>"; };
 		BAAF11D92518E05E00167B38 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = "../../../../../Downloads/Quiz-Buzzer02-mp3 2/correct.wav"; sourceTree = "<group>"; };
 		BAAF11DD2518E16900167B38 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incorrect.wav; path = "../../../../../Downloads/Quiz-Wrong_Buzzer02-mp3/incorrect.wav"; sourceTree = "<group>"; };
 		BAEBDED2250B5F8D00E8BD6A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAEBDED7250B5F8D00E8BD6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BAEBDED9250B5F8D00E8BD6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAEBDED9250B5F8D00E8BD6A /* StudyingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyingViewController.swift; sourceTree = "<group>"; };
 		BAEBDEDC250B5F8D00E8BD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAEBDEDE250B5F9100E8BD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAEBDEE1250B5F9100E8BD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,8 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEBDEDB250B5F8D00E8BD6A /* Main.storyboard */,
-				BAEBDED9250B5F8D00E8BD6A /* ViewController.swift */,
-				BA591EBF25505600001D02E2 /* StudyViewController.swift */,
+				BAEBDED9250B5F8D00E8BD6A /* StudyingViewController.swift */,
 				BA591EC22550561E001D02E2 /* StudyViewModel.swift */,
 			);
 			path = Study;
@@ -202,10 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA591EC32550561E001D02E2 /* StudyViewModel.swift in Sources */,
-				BAEBDEDA250B5F8D00E8BD6A /* ViewController.swift in Sources */,
+				BAEBDEDA250B5F8D00E8BD6A /* StudyingViewController.swift in Sources */,
 				BAEBDEF9250DF80100E8BD6A /* UIImage+resize.swift in Sources */,
 				BAEBDED6250B5F8D00E8BD6A /* AppDelegate.swift in Sources */,
-				BA591EC025505600001D02E2 /* StudyViewController.swift in Sources */,
 				BAEBDF12251757F700E8BD6A /* UIButton+makeStyle.swift in Sources */,
 				BAEBDED8250B5F8D00E8BD6A /* SceneDelegate.swift in Sources */,
 				BAEBDEFE250E523700E8BD6A /* Word.swift in Sources */,
