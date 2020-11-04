@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA591EC32550561E001D02E2 /* StudyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA591EC22550561E001D02E2 /* StudyViewModel.swift */; };
+		BA591EDD2552F56C001D02E2 /* TestResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA591EDC2552F56C001D02E2 /* TestResult.storyboard */; };
 		BAAF11DA2518E05E00167B38 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAAF11D92518E05E00167B38 /* correct.wav */; };
 		BAAF11DE2518E16900167B38 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAAF11DD2518E16900167B38 /* incorrect.wav */; };
 		BAEBDED6250B5F8D00E8BD6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBDED5250B5F8D00E8BD6A /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		BA591EC22550561E001D02E2 /* StudyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewModel.swift; sourceTree = "<group>"; };
+		BA591EDC2552F56C001D02E2 /* TestResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestResult.storyboard; sourceTree = "<group>"; };
 		BAAF11D92518E05E00167B38 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = "../../../../../Downloads/Quiz-Buzzer02-mp3 2/correct.wav"; sourceTree = "<group>"; };
 		BAAF11DD2518E16900167B38 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incorrect.wav; path = "../../../../../Downloads/Quiz-Wrong_Buzzer02-mp3/incorrect.wav"; sourceTree = "<group>"; };
 		BAEBDED2250B5F8D00E8BD6A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,7 @@
 		BA591EB7254EE9BE001D02E2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BA591EDB2552F4E8001D02E2 /* TestResult */,
 				BA591EB8254EEA63001D02E2 /* Study */,
 			);
 			path = ViewControllers;
@@ -65,6 +68,14 @@
 				BA591EC22550561E001D02E2 /* StudyViewModel.swift */,
 			);
 			path = Study;
+			sourceTree = "<group>";
+		};
+		BA591EDB2552F4E8001D02E2 /* TestResult */ = {
+			isa = PBXGroup;
+			children = (
+				BA591EDC2552F56C001D02E2 /* TestResult.storyboard */,
+			);
+			path = TestResult;
 			sourceTree = "<group>";
 		};
 		BAEBDEC9250B5F8D00E8BD6A = {
@@ -188,6 +199,7 @@
 				BAEBDEDF250B5F9100E8BD6A /* Assets.xcassets in Resources */,
 				BAEBDEDD250B5F8D00E8BD6A /* Main.storyboard in Resources */,
 				BAAF11DA2518E05E00167B38 /* correct.wav in Resources */,
+				BA591EDD2552F56C001D02E2 /* TestResult.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
