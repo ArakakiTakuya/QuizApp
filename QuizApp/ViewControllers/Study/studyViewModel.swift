@@ -47,8 +47,6 @@ class StudyViewModel {
     func nextQuestion(){
         if questionNumber + 1 < 5 {
             questionNumber += 1
-        } else {
-            questionNumber = 0
-        }
+        } 
     }
 }

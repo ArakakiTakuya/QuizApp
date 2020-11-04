@@ -55,11 +55,19 @@ class StudyViewController: UIViewController {
             playSound(soundName : "incorrect")
         }
         
-        studyViewModel.nextQuestion()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.timer?.invalidate()
-            self.updateUI()
+        if studyViewModel.questionNumber < 4 {
+            studyViewModel.nextQuestion()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                self.timer?.invalidate()
+                self.updateUI()
+            }
+        }else {
+            // storyboardのインスタンスをStoryboard IDを元に取得
+            let storyboard = UIStoryboard(name: "TestResult", bundle: nil)
+            // storyboard内で"is initial"に指定されているViewControllerを取得
+            let destinationVC = storyboard.instantiateInitialViewController() as! TestResultViewController
+            self.present(destinationVC, animated: true, completion: nil)
         }
     }
     
