@@ -10,10 +10,12 @@ import UIKit
 
 class TestResultViewController: UIViewController {
 
+    @IBOutlet weak var scoreTextLabel: UILabel!
+    var score: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        self.scoreTextLabel.text = "\(self.score) / 5"
     }
     
 

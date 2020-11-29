@@ -49,6 +49,7 @@ class StudyViewController: UIViewController {
             let resizedImage = setImage(imgFile: "correct.png")
             questionLabel.backgroundColor = UIColor(patternImage: resizedImage)
             playSound(soundName : "correct")
+            studyViewModel.scoreUp()
         }else{
             let resizedImage = setImage(imgFile:"incorrect.png")
             questionLabel.backgroundColor = UIColor(patternImage: resizedImage)
@@ -67,6 +68,7 @@ class StudyViewController: UIViewController {
             let storyboard = UIStoryboard(name: "TestResult", bundle: nil)
             // storyboard内で"is initial"に指定されているViewControllerを取得
             let destinationVC = storyboard.instantiateInitialViewController() as! TestResultViewController
+            destinationVC.score = studyViewModel.getScore()
             self.present(destinationVC, animated: true, completion: nil)
         }
     }

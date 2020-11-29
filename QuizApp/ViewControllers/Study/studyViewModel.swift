@@ -13,6 +13,7 @@ class StudyViewModel {
     var questionNumber: Int = 0
     var newOrderWords: [Word]?
     var newQuestion: [Word]?
+    var score: Int = 0
     
     init(){
         self.words = [
@@ -48,5 +49,13 @@ class StudyViewModel {
         if questionNumber + 1 < 5 {
             questionNumber += 1
         } 
+    }
+    
+    func scoreUp(){
+        score += 1
+    }
+    
+    func getScore() -> Int {
+        return score
     }
 }

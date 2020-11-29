@@ -28,6 +28,9 @@
                         <viewLayoutGuide key="safeArea" id="j3w-1Z-vWg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreTextLabel" destination="adQ-i4-ECJ" id="TFG-Po-513"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sY-GS-V1F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
