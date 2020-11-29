@@ -82,9 +82,11 @@ class StudyViewController: UIViewController {
                 self.timeProgressBar.progress = Float(secondsRemaining)/Float(5.0)
                 secondsRemaining -= 0.01
             } else {
-                self.timer?.invalidate()
-                self.studyViewModel.nextQuestion()
-                self.updateUI()
+                if self.studyViewModel.questionNumber < 4 {
+                    self.timer?.invalidate()
+                    self.studyViewModel.nextQuestion()
+                    self.updateUI()
+                }
             }
         }
     }
